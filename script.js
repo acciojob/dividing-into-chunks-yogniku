@@ -1,22 +1,11 @@
-const arr = [1, 2, 3, 4, 1, 0, 2, 2];
-divide([1, 2, 3, 4, 1, 0, 2, 2], 5)
-divide([4, 3, 2, 1], 4)
-const divide = (arr, n) => {
-  // Write your code here
-	 arr.forEach(num => {
-        if (currentSubarray.reduce((acc, val) => acc + val, 0) + num <= n) {
-            currentSubarray.push(num);
-        } else {
-            subarrays.push(currentSubarray);
-            currentSubarray = [num];
-        }
-    });
-
-    if (currentSubarray.length > 0) {
-        subarrays.push(currentSubarray);
-    }
-
-    return subarrays;
+function chunkArray(myarry,chunksize) {
+	const result=[]
+	let n=6;
+	while (n < myarry.length) {
+		results.push(myarry.slice(index,index+chunksize))
+		index+=chunksize;
+	}
+	return results;
 }
 
 const n = prompt("Enter n: ");
